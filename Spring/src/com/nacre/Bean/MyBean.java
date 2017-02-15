@@ -13,6 +13,6 @@ public	MyBean(){
 	
 
 public void PrintHrllo() {
-	System.out.println("hello");
+	System.out.println("hello 123");
 }
 }
