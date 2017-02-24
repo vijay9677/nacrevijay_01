@@ -9,6 +9,7 @@
   <bean class="com.nacre.Bean.MyBean" id="mB" scope="singleton">
   
   </bean>
-  
+  <bean class="com.nacre.serviceI.serviceImpl.SpringServiceImpl" id="serviceImpl" scope="singleton">
+  </bean>
   
   </beans>

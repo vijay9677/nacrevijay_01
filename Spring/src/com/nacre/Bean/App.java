@@ -17,12 +17,12 @@ public class App {
 		Resource resource = new ClassPathResource("resources/spring.xml");
 		//BeanFactory bf = new XmlBeanFactory(resource);
 		ApplicationContext ac = new ClassPathXmlApplicationContext("resources/spring.xml");
-		ac.getBean("mB");
-	//	Logger l = 
-	Object o =	ac.getBean("mB");//bf.getBean("mB");
-	Object o1 =	ac.getBean("mB");//bf.getBean("mB");
+/*		ac.getBean("serviceImpl");
+*/	//	Logger l = 
+	Object o =	ac.getBean("serviceImpl");//bf.getBean("mB");
+/*	Object o1 =	ac.getBean("mB");//bf.getBean("mB");
 	Object o2 =	ac.getBean("mB");//bf.getBean("mB");
-	RoleList list = new RoleList();
+*///	RoleList list = new RoleList();
 	
 //	List l = new ArrayList();
 			
@@ -35,17 +35,17 @@ public class App {
 	    logger.debug("This is debug");
 	}
 	if(logger.isInfoEnabled()){
-		logger.info("This is info : " +o1);
+		logger.info("This is info : " +o);
 	}
 
-	logger.warn("This is warn : " + o2);
+	logger.warn("This is warn : " + o);
 	logger.fatal("This is fatal : " + o);
 
 	//logs an error message with parameter
 	logger.error("This is error : " +o);
 
 	//logs an exception thrown from somewhere
-	logger.trace("THIS IS TRACE "+o2);
+	logger.trace("THIS IS TRACE "+o);
 	
 	}
 }
